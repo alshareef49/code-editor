@@ -21,7 +21,7 @@ export default defineSchema({
         error:v.optional(v.string())
     }).index("by_user_id",["userId"]),
 
-    Snippets:defineTable({
+    snippets:defineTable({
         userId:v.string(),
         title:v.string(),
         language:v.string(),
